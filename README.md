@@ -1,1 +1,1 @@
-# 6-Key-Macropad-PCB
+# 6-Key-Macropad
