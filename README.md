@@ -1,1 +1,1 @@
-# 6-Key-Macropad
+# 8-Key-Macropad
