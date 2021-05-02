@@ -437,16 +437,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0113
 U 1 1 608FED04
-P 4750 2150
-F 0 "#PWR0113" H 4750 1900 50  0001 C CNN
-F 1 "GND" H 4755 1977 50  0000 C CNN
-F 2 "" H 4750 2150 50  0001 C CNN
-F 3 "" H 4750 2150 50  0001 C CNN
-	1    4750 2150
+P 5750 2150
+F 0 "#PWR0113" H 5750 1900 50  0001 C CNN
+F 1 "GND" H 5755 1977 50  0000 C CNN
+F 2 "" H 5750 2150 50  0001 C CNN
+F 3 "" H 5750 2150 50  0001 C CNN
+	1    5750 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 2150 4750 2150
 Text GLabel 2650 4900 0    50   Input ~ 0
 ROW1
 Text GLabel 2650 4200 0    50   Input ~ 0
@@ -693,17 +691,6 @@ F 3 "" H 2475 3825 60  0001 C CNN
 	1    3100 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L random-keyboard-parts:Molex-0548190589 USB1
-U 1 1 608F48FD
-P 4150 1950
-F 0 "USB1" V 4687 1917 60  0000 C CNN
-F 1 "Molex-0548190589" V 4581 1917 60  0000 C CNN
-F 2 "random-keyboard-parts:Molex-0548190589" H 4150 1950 60  0001 C CNN
-F 3 "" H 4150 1950 60  0001 C CNN
-	1    4150 1950
-	0    -1   -1   0   
-$EndComp
 Text GLabel 8750 3600 2    50   Input ~ 0
 ROW1
 Text GLabel 8750 3700 2    50   Input ~ 0
@@ -716,4 +703,22 @@ Text GLabel 8750 2400 2    50   Input ~ 0
 COL0
 Text GLabel 8750 2700 2    50   Input ~ 0
 ROW0
+$Comp
+L random-keyboard-parts:Molex-0548190589 USB1
+U 1 1 608F48FD
+P 4150 1950
+F 0 "USB1" V 4687 1917 60  0000 C CNN
+F 1 "Molex-0548190589" V 4581 1917 60  0000 C CNN
+F 2 "random-keyboard-parts:Molex-0548190589" H 4150 1950 60  0001 C CNN
+F 3 "" H 4150 1950 60  0001 C CNN
+	1    4150 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 1650 5750 1650
+Wire Wire Line
+	5750 1650 5750 2150
+Wire Wire Line
+	4450 2150 5750 2150
+Connection ~ 5750 2150
 $EndSCHEMATC
